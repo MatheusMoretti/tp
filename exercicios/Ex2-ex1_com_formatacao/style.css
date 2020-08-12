@@ -1,0 +1,43 @@
+body {
+    background-color: #96b6fa;
+    color: #29272a;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    margin-left: 1.4em;
+}
+
+h1 {
+    color: #29272a;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-decoration: double;
+    text-align:center;
+}
+
+h2 {
+    text-indent: 0.8em;
+    color: #ffffff;
+    background-color: #5335a5;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+header {
+    text-align: center;
+}
+
+tr,
+th,
+td {        
+    border: solid 0.2em;
+    text-align: center;
+}
+
+table{
+    width:100%
+}
+
+#img1{
+    float:right;
+    width:85%;
+    height: 23vh;
+}
