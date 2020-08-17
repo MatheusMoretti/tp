@@ -57,11 +57,11 @@ table{
 }
 
 input:required:invalid, input:focus:invalid, textarea:required:invalid, textarea:focus:invalid {
-    background: url("../imagens/wrong.gif") no-repeat;
+    background: url("./imagens/wrong.gif") no-repeat;
     background-position: right;
 } 
 
 input:required:valid, textarea:required:valid { 
-    background: url("../imagens/check.png") no-repeat;
+    background: url("./imagens/check.png") no-repeat;
     background-position: right;
 } 
