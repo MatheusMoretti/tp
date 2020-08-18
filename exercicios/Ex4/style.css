@@ -65,3 +65,7 @@ input:required:valid, textarea:required:valid {
     background: url("./imagens/check.png") no-repeat;
     background-position: right;
 } 
+
+textarea{
+    resize: none;
+}
