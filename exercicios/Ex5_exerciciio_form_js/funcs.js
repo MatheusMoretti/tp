@@ -38,9 +38,11 @@ function validacao() {
     document.cadastro.descricao.value = document.cadastro.descricao.value.toLowerCase();
 
 /*Validacao Tel OU Email*/
-    var tel = document.cadastro.tele.value
-    var email = document.cadastro.email.value
-    if(tel==""&&email==""){
+    var vtel = document.cadastro.tele.value.match(document.cadastro.tele.pattern);
+    var vemail = document.cadastro.email.value.match(document.cadastro.email.pattern)
+    if(vtel==null  && vemail==null){
+        // vtel==null significa que o patter e dado no campo nao batem
+        // se os 2 nao batem nada foi informado nesses campos
         alert("Necessario informar telefone e/ou email");
         valido = false;
     }
