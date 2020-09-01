@@ -6,35 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/estilo.css" rel="stylesheet">
 
     <script src="public/js/jquery.js"></script>
     <script src="public/js/bootstrap.bundle.min.js"></script>
 
+    <!-- favicon -->
+    <link href="public/imgs/moretti-icon.png" rel="icon">
     <title>Exercicio 6</title>
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <a href="#" class="navbar-brand">Logo</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--links-->
-        <div id="menu" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Fale conosco</a></li>
-            </ul>
+    <!-- inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top navbar-default">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" href="http://github.com/MatheusMoretti" target="blank">
+                <img src="public/imgs/moretti.png" height="70" width="160">
+            </a>
+            <!-- botao sanduiche -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- menu -->
+            <div id="menu" class="collapse navbar-collapse">
+                <!-- links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="pag_mus.html">Musicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pag_film.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pag_anim.html">Animes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pag_game.html">Jogos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hai">Quem sou</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+    <!-- fim do navbar -->
 
-    <!--Container-->
-    <div class="container">
+    <!-- inicio header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!--Texto explicando o site-->
+                <div class="col-lg-4 col-12 text-light jumbotron bg-transparent">
+                    <h1 class="display-4 font-weight-bold text-center">Indicações </h1>
+                    <p id="fp" class="text-light text-justify">Aqui você encontrará recomendaçoes de filmes, musicas, series, e jogos,
+                        baseados exclusivamente nos meus gostos pessoais.</p>
+                    <a href="#hai" class="btn-dark btn-lg btn-block text-center">QUEM SOU</a>
+                </div>
+                <div class="col-lg-1 col-0"></div>
+                <!--Carousel-->
+                <div class="col-lg-7 col-12" style="padding-bottom: 3%;">
+                    <!--Container-->
+                    <div class="container" style="margin-top:8%;">
+                        <!--carrosel-->
+                        <div id="Paginas" class="carousel slide" data-ride="carousel" style="text-align: center;">
+                            <!--Indicadores-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#Paginas" data-slide-to="0" class="active"></li>
+                                <li data-target="#Paginas" data-slide-to="1"></li>
+                                <li data-target="#Paginas" data-slide-to="2"></li>
+                                <li data-target="#Paginas" data-slide-to="3"></li>
+                            </ol>
+                            <!--Conteudo-->
+                            <div class="carousel-inner border rounded">
+                                <!--Imagem 1-->
+                                <div class="carousel-item active">
+                                    <img src="public/imgs/gamezone.jpg" class="img-fluid" alt="Jogos">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>GAMES</h5>
+                                    </div>
+                                </div>
+                                <!--Imagem 2-->
+                                <div class="carousel-item">
+                                    <img src="public/imgs/cinema.jpg" class="img-fluid" alt="Filmes">
+                                </div>
+                                <!--Imagem 3-->
+                                <div class="carousel-item">
+                                    <img src="public/imgs/musiczone.jpg" class="img-fluid" alt="Músicas">
+                                </div>
+                                <!--Imagem 4-->
+                                <div class="carousel-item">
+                                    <img src="public/imgs/serieszone.jpg" class="img-fluid" alt="Séries">
+                                </div>
+                            </div>
 
+                            <!--Seta Voltar-->
+                            <a class="carousel-control-prev" href="#Paginas" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <!--Seta Avançar-->
+                            <a class="carousel-control-next" href="#Paginas" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- fim do header -->
+
+    <!-- inicio cards -->
+    <div class="container-fluid teste">
+        <div class="row d-flex align-items-strch">
+            <!-- games -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">
+                    <div class="card-body rounded"  style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            GAMES
+                        </h5>
+                        <p class="card-text text-center font-weight-bold">
+                            Aqui você encontrará recomendaçoes de jogos, 
+                            como minecraft, the witcher 3, cyberpunk2077 e outros.
+                        </p>
+                    </div> 
+                    <a href="pag_game.html" class="btn btn-info">Ver Mais</a>
+                </div>
+            </div>
+            <!-- musica -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/music.png" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">
+                    <div class="card-body rounded"  style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            MÚSICAS
+                        </h5>
+                        <p class="card-text text-center font-weight-bold">
+                            Aqui você encontrará recomendaçoes de músicas, 
+                            como The Ghost Train, WTayllor, I Ran e outros.
+                        </p>
+                    </div> 
+                    <a href="pag_mus.html" class="btn btn-info">Ver Mais</a>
+                </div>
+            </div>
+            <!-- filme e series -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/films.jpg"class="rounded-circle img-fluid max-width:33%" style="padding: 5%;"> 
+                    <div class="card-body rounded"  style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            FILMES E SÉRIES
+                        </h5>
+                        <p class="card-text text-center font-weight-bold">
+                            Aqui você encontrará recomendaçoes de filmes e seriados, 
+                            como vingadores, inception, the punisher etc.
+                        </p>
+                    </div> 
+                    <a href="pag_film.html" class="btn btn-info">Ver Mais</a>
+                </div>  
+            </div>
+            <!-- animes -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/anime.jpg" class="rounded-circle img-fluid img-lg" style="padding: 5%;">
+                    <div class="card-body rounded"  style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            ANIMES
+                        </h5>
+                        <p class="card-text text-center font-weight-bold">
+                            Aqui você encontrará recomendaçoes de animes, 
+                            tais como boku no hero, naruto, dragon ball Z etc.
+                        </p>
+                    </div> 
+                    <a href="pag_anim.html" class="btn btn-info">Ver Mais</a>  
+                </div> 
+            </div>
+        </div>
     </div>
+    <!-- fim do cards -->
+
+    <!-- inicio quem sou -->
+    <div id="hai" class="container-fluid">
+        <div class="row align-items-strch">
+            <!-- Texto -->
+            <div class="col-lg-9 col-md-8 col-12 border rounded">
+                <p id="me" class="text-center text-light font-weight-bold">Meu nome é Matheus 
+                    Henrique Moretti, tenho 19 anos, curso <lead>Engenharia de Computação</lead> na PUC-CAMPINAS, 
+                    atualmente no 6º Semestre. Gosto da cultura geek como um todo, e não ha nada melhor 
+                    do que programar escutando lo-fi.</p>
+            </div>
+
+            <!-- Picture -->
+            <div class="col-lg-3 col-md-4">
+                <img id="pic" src="public/imgs/pic.jpeg" class="img-lg img-thumbnail rounded d-none d-md-block">
+            </div>
+        </div>
+    </div>
+    <!-- fim do quem sou -->
+
+    <!-- inicio footer -->
+        <footer class="text-light text-center bg-dark">
+            <p>Desenvolvido por Matheus Moretti</p>
+        </footer>
+    <!-- fim do footer -->
+
 </body>
 
 </html>
