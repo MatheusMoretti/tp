@@ -48,7 +48,7 @@
     <!--inicio headedr-->
     <header>
         <div class="container padbase">
-            <h1 class="display-2 text-center text-light font-weight-bold glow">TOP 3 FILMES/SÉRIES</h1>
+            <h1 class="display-2 text-center text-light font-weight-bold glow padcard">TOP 3 FILMES/SÉRIES</h1>
         </div>
         <div class="container">
             <!-- top 3 -->
@@ -57,7 +57,7 @@
                 <div class="col-lg-4 col-12">
                     <div class="card bg-transparent">
                         <a data-toggle="modal" data-target="#contmod1">
-                            <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33% border"
+                            <img src="public/imgs/spiderman.jpg" class="rounded-circle img-fluid max-width:33%"
                                 style="padding: 5%;">
                         </a>
                         <!-- modal -->
@@ -77,7 +77,7 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-lg-6 col-12">
-                                                *IMAGEM*
+                                                <img src="public/imgs/spiderman.jpg" class="rounded img-fluid img-lg">
                                             </div>
                                             <div class="col-lg-6 col-12">
                                                 <p class="text-justify font-weight-bold modaltext">
@@ -111,7 +111,7 @@
                 <div class="col-lg-4 col-12">
                     <div class="card bg-transparent">
                         <a data-toggle="modal" data-target="#contmod2">
-                            <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33% border"
+                            <img src="public/imgs/endgame.jpg" class="rounded-circle img-fluid max-width:33%"
                                 style="padding: 5%;">
                         </a>
                         <!-- modal -->
@@ -131,7 +131,7 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-6">
-                                                *IMAGE*
+                                                <img src="public/imgs/endgame.jpg" class="rounded img-fluid img-lg">
                                             </div>
                                             <div class="col-6">
                                                 <p class="text-justify font-weight-bold modaltext">
@@ -164,7 +164,7 @@
                 <div class="col-lg-4 col-12">
                     <div class="card bg-transparent">
                         <a data-toggle="modal" data-target="#contmod3">
-                            <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33% border"
+                            <img src="public/imgs/infwar.jpg" class="rounded-circle img-fluid max-width:33%"
                                 style="padding: 5%;">
                         </a>
                         <!-- modal -->
@@ -184,7 +184,7 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-6">
-                                                <img>
+                                                <img src="public/imgs/infwar.jpg" class="rounded img-fluid img-lg">
                                             </div>
                                             <div class="col-6">
                                                 <p class="text-justify font-weight-bold modaltext">
@@ -218,7 +218,7 @@
     <!-- inicio accordion -->
     <div class="container-fluid teste">
         <div class="pdbase">
-            <h2 class="display-4 text-center font-weight-bold text-light">Lista de Jogos Recomendados</h2>
+            <h2 class="display-4 text-center font-weight-bold text-light padbase">Lista de Filmes e Séries Recomendados</h2>
         </div>
         <div class="accordion" id="gameacc">
 
@@ -226,20 +226,22 @@
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        <button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseOne"
                             aria-expanded="false" aria-controls="collapseOne">
-                            GAME 1
+                            Filme/Série 1
                         </button>
                     </h5>
                 </div>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#gameacc">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-3">
-                                <img>
+                            <div class="col-4">
+                                <p class="text-center font-weight-bold font-size-xl">Zootopia</p>
                             </div>
-                            <div class="col-9">
-                                <p></p>
+                            <div class="col-8">
+                                <a class="btn btn-block btn-dark" href="#">
+                                    <i class="icon ion-md-play"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -250,20 +252,22 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        <button class="btn btn-dark btn-block collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            GAME 2
+                            Filme/Série 2
                         </button>
                     </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#gameacc">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-3">
-                                <img>
+                            <div class="col-4">
+                                <p class="text-center font-weight-bold font-size-xl">Robots</p>
                             </div>
-                            <div class="col-9">
-                                <p></p>
+                            <div class="col-8">
+                                <a class="btn btn-block btn-dark" href="#">
+                                    <i class="icon ion-md-play"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -274,20 +278,22 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        <button class="btn btn-dark btn-block collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            GAME 3
+                            Filme/Série 3
                         </button>
                     </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#gameacc">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-3">
-                                <img>
+                            <div class="col-4">
+                                <p class="text-center font-weight-bold font-size-xl">De volta para o futuro</p>
                             </div>
-                            <div class="col-9">
-                                <p></p>
+                            <div class="col-8">
+                                <a class="btn btn-block btn-dark" href="#">
+                                    <i class="icon ion-md-play"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

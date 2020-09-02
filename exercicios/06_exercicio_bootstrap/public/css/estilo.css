@@ -17,8 +17,17 @@ footer{
 }
 
 .padbase{
-    padding-top: 0.8em;
+    padding-top: 0.4em;
     padding-bottom: 1.1em;
+}
+.padcard{
+    padding-top: 3rem;
+}
+#padcard1{
+    padding-top: 1rem;
+}
+#padcard2{
+    padding-top: 2.4rem;
 }
 #fp{
     font-size: large;

@@ -48,16 +48,16 @@
     <!--inicio headedr-->
     <header>
         <div class="container padbase">
-            <h1 class="display-2 text-center text-light font-weight-bold glow">TOP 3 MÚSICAS</h1>
+            <h1 class="display-2 text-center text-light font-weight-bold glow padcard">TOP 3 MÚSICAS</h1>
         </div>
         <div class="container">
             <!-- top 3 -->
             <div class="row">
                 <!-- item 1 -->
                 <div class="col-lg-4 col-12">
-                    <div class="card bg-transparent">
+                    <div class="card bg-transparent" id="padcard2">
                         <a data-toggle="modal" data-target="#contmod1">
-                            <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33% border"
+                            <img src="public/imgs/music2.jpg" class="rounded-circle img-fluid max-width:33%"
                                 style="padding: 5%;">
                         </a>
                         <!-- modal -->
@@ -67,7 +67,7 @@
 
                                     <!-- título -->
                                     <div class="modal-header">
-                                        <h4>TITULO</h4>
+                                        <h4>THE HOUSE OF THE RISING SUN</h4>
                                         <button class="close" data-dismiss="modal" arial-label="Fechar">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -77,10 +77,10 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-6">
-                                                TEXTO 1
+                                                <p class="text-center font-weight-bold">The White Buffalo - The House of The Rising Sun (Sons of Anarchy Season 4 Finale Song) </p>
                                             </div>
                                             <div class="col-6">
-                                                texto 2
+                                                <a type="button" class="btn btn-dark rounded btn-block" href="https://www.youtube.com/watch?v=scTqpfL9WMA" target="blank">Clique aqui e escute</a>
                                             </div>
                                         </div>
                                     </div>
@@ -97,9 +97,9 @@
                 </div>
                 <!-- item 2 -->
                 <div class="col-lg-4 col-12">
-                    <div class="card bg-transparent">
+                    <div class="card bg-transparent" id="padcard1">
                         <a data-toggle="modal" data-target="#contmod2">
-                            <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33% border"
+                            <img src="public/imgs/music1.jpg" class="rounded-circle img-fluid max-width:33%"
                                 style="padding: 5%;">
                         </a>
                         <!-- modal -->
@@ -109,7 +109,7 @@
 
                                     <!-- titulo -->
                                     <div class="modal-header">
-                                        <h4>modal teste</h4>
+                                        <h4>GHOST TRAIN</h4>
                                         <button class="close" data-dismiss="modal" arial-label="Fechar">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -119,10 +119,11 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-6">
-                                                TEXTO 1
+                                                <p class="text-center font-weight-bold">Ghost Train - North Country Gentlemen</p>
                                             </div>
                                             <div class="col-6">
-                                                texto 2
+                                                <a type="button" class="btn btn-dark rounded btn-block" 
+                                                href="https://www.youtube.com/watch?v=xkOtxWqjJuM" target="blank">Clique aqui e escute</a>
                                             </div>
                                         </div>
                                     </div>
@@ -139,9 +140,9 @@
                 </div>
                 <!-- item 3 -->
                 <div class="col-lg-4 col-12">
-                    <div class="card bg-transparent">
+                    <div class="card bg-transparent padcard">
                         <a data-toggle="modal" data-target="#contmod3">
-                            <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33% border"
+                            <img src="public/imgs/music3.jpg" class="rounded-circle img-fluid max-width:33%"
                                 style="padding: 5%;">
                         </a>
                         <!-- modal -->
@@ -151,7 +152,7 @@
 
                                     <!-- titulo -->
                                     <div class="modal-header">
-                                        <h4>modal teste</h4>
+                                        <h4>HUMAN</h4>
                                         <button class="close" data-dismiss="modal" arial-label="Fechar">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -161,10 +162,11 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-6">
-                                                <img>
+                                                <p class="text-center font-weight-bold">Rag'n'Bone Man - Human</p>
                                             </div>
                                             <div class="col-6">
-                                                <p></p>
+                                                <a type="button" class="btn btn-dark rounded btn-block" 
+                                                href="https://www.youtube.com/watch?v=L3wKzyIN1yk" target="blank">Clique aqui e escute</a>
                                             </div>
                                         </div>
                                     </div>
@@ -187,7 +189,7 @@
     <!-- inicio accordion -->
     <div class="container-fluid teste">
         <div class="pdbase">
-            <h2 class="display-4 text-center font-weight-bold text-light">Lista de Jogos Recomendados</h2>
+            <h2 class="display-4 text-center font-weight-bold text-light padbase">Lista de Músicas Recomendadas</h2>
         </div>
         <div class="accordion" id="gameacc">
 
@@ -195,20 +197,22 @@
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        <button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseOne"
                             aria-expanded="false" aria-controls="collapseOne">
-                            GAME 1
+                            Música 1
                         </button>
                     </h5>
                 </div>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#gameacc">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-3">
-                                <img>
+                            <div class="col-4">
+                                <p class="text-center font-weight-bold font-size-xl">OneRepublic - Rescue Me</p>
                             </div>
-                            <div class="col-9">
-                                <p></p>
+                            <div class="col-8">
+                                <a class="btn btn-block btn-dark" href="https://www.youtube.com/watch?v=Nym5stAJAt8">
+                                    <i class="icon ion-md-play"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -219,20 +223,22 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        <button class="btn btn-dark btn-block collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            GAME 2
+                            Música 2
                         </button>
                     </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#gameacc">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-3">
-                                <img>
+                            <div class="col-4">
+                                <p class="text-center font-weight-bold font-size-xl">VMZ - A Prova de Balas</p>
                             </div>
-                            <div class="col-9">
-                                <p></p>
+                            <div class="col-8">
+                                <a class="btn btn-block btn-dark" href="https://www.youtube.com/watch?v=B_ZpA0cAhCg">
+                                    <i class="icon ion-md-play"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -243,20 +249,22 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        <button class="btn btn-dark btn-block collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            GAME 3
+                            Música 3
                         </button>
                     </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#gameacc">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-3">
-                                <img>
+                            <div class="col-4">
+                                <p class="text-center font-weight-bold font-size-xl">Lucas A.R.T - JINCHUURIKI</p>
                             </div>
-                            <div class="col-9">
-                                <p></p>
+                            <div class="col-8">
+                                <a class="btn btn-block btn-dark" href="https://www.youtube.com/watch?v=XezKJpNL4Ac">
+                                    <i class="icon ion-md-play"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
