@@ -1,0 +1,81 @@
+var games = [{
+    "nome": "img1",
+    "link": "public/imgs/jogos/amg.png",
+    "resposta": "res1",
+    "res1": "Among Us",
+    "res2": "Sonic",
+    "res3": "Fall Guys",
+    "res4": "Pummel Party"
+}, {
+    "nome": "img2",
+    "link": "public/imgs/jogos/cofc.png",
+    "resposta": "alt1",
+    "res1": "Clash Royale",
+    "res2": "Clash Of Clans",
+    "res3": "Age Of Empires",
+    "res4": "HearthStone"
+}, {
+    "nome": "img3",
+    "link": "public/imgs/jogos/dt.png",
+    "resposta": "alt1",
+    "res1": "Dota 2",
+    "res2": "League of Legends",
+    "res3": "World of Warcraft",
+    "res4": "Mobile Legends"
+}, {
+    "nome": "img4",
+    "link": "public/imgs/jogos/g1.png",
+    "resposta": "alt1",
+    "res1": "Fortnite",
+    "res2": "PUBG",
+    "res3": "Call Of Duty",
+    "res4": "Free Fire"
+}, {
+    "nome": "img5",
+    "link": "public/imgs/jogos/hl.png",
+    "resposta": "alt1",
+    "res1": "Celeste",
+    "res2": "Ori",
+    "res3": "Hollow Knight",
+    "res4": "Cup Head"
+}, {
+    "nome": "img6",
+    "link": "public/imgs/jogos/Lol.png",
+    "resposta": "alt1",
+    "res1": "League of Legeds",
+    "res2": "Dota 2",
+    "res3": "Diablo",
+    "res4": "Mobile Legends"
+}, {
+    "nome": "img7",
+    "link": "public/imgs/jogos/mk.png",
+    "resposta": "alt1",
+    "res1": "Forza",
+    "res2": "Sonic All Stars",
+    "res3": "Mario Kart",
+    "res4": "Mario Party"
+}, {
+    "nome": "img8",
+    "link": "public/imgs/jogos/pac.png",
+    "resposta": "alt1",
+    "res1": "PacMan",
+    "res2": "PinBall",
+    "res3": "Tetris",
+    "res4": "TrickTowers"
+}, {
+    "nome": "img9",
+    "link": "public/imgs/jogos/sc.png",
+    "resposta": "alt1",
+    "res1": "Sonic",
+    "res2": "Speed Racer",
+    "res3": "Crash Bandicoot",
+    "res4": "Mario Party"
+}, {
+    "nome": "img10",
+    "link": "public/imgs/jogos/sub.png",
+    "resposta": "alt1",
+    "res1": "Subway Surfers",
+    "res2": "Temple Run",
+    "res3": "Flappy Bird",
+    "res4": "Pokemon GO"
+}];
