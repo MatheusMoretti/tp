@@ -9,7 +9,7 @@ var games = [{
 }, {
     "nome": "img2",
     "link": "public/imgs/jogos/cofc.png",
-    "resposta": "alt1",
+    "resposta": "res2",
     "res1": "Clash Royale",
     "res2": "Clash Of Clans",
     "res3": "Age Of Empires",
@@ -17,7 +17,7 @@ var games = [{
 }, {
     "nome": "img3",
     "link": "public/imgs/jogos/dt.png",
-    "resposta": "alt1",
+    "resposta": "res1",
     "res1": "Dota 2",
     "res2": "League of Legends",
     "res3": "World of Warcraft",
@@ -25,7 +25,7 @@ var games = [{
 }, {
     "nome": "img4",
     "link": "public/imgs/jogos/g1.png",
-    "resposta": "alt1",
+    "resposta": "res4",
     "res1": "Fortnite",
     "res2": "PUBG",
     "res3": "Call Of Duty",
@@ -33,7 +33,7 @@ var games = [{
 }, {
     "nome": "img5",
     "link": "public/imgs/jogos/hl.png",
-    "resposta": "alt1",
+    "resposta": "res3",
     "res1": "Celeste",
     "res2": "Ori",
     "res3": "Hollow Knight",
@@ -41,7 +41,7 @@ var games = [{
 }, {
     "nome": "img6",
     "link": "public/imgs/jogos/Lol.png",
-    "resposta": "alt1",
+    "resposta": "res1",
     "res1": "League of Legeds",
     "res2": "Dota 2",
     "res3": "Diablo",
@@ -49,7 +49,7 @@ var games = [{
 }, {
     "nome": "img7",
     "link": "public/imgs/jogos/mk.png",
-    "resposta": "alt1",
+    "resposta": "res3",
     "res1": "Forza",
     "res2": "Sonic All Stars",
     "res3": "Mario Kart",
@@ -57,7 +57,7 @@ var games = [{
 }, {
     "nome": "img8",
     "link": "public/imgs/jogos/pac.png",
-    "resposta": "alt1",
+    "resposta": "res1",
     "res1": "PacMan",
     "res2": "PinBall",
     "res3": "Tetris",
@@ -65,7 +65,7 @@ var games = [{
 }, {
     "nome": "img9",
     "link": "public/imgs/jogos/sc.png",
-    "resposta": "alt1",
+    "resposta": "res1",
     "res1": "Sonic",
     "res2": "Speed Racer",
     "res3": "Crash Bandicoot",
@@ -73,7 +73,7 @@ var games = [{
 }, {
     "nome": "img10",
     "link": "public/imgs/jogos/sub.png",
-    "resposta": "alt1",
+    "resposta": "res1",
     "res1": "Subway Surfers",
     "res2": "Temple Run",
     "res3": "Flappy Bird",
