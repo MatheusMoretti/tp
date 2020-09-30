@@ -4,30 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="public/css/.css" rel="stylesheet">-->
+    <!--JQuery -->
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+
+    <link href="public/css/mystyle.css" rel="stylesheet">
+    <!--JSON-->
+    <script type="text/javascript" src="public/jsons/quiz.json" charset="utf-8"></script>
+    <script type="text/javascript" src="public/jsons/info.json" charset="utf-8"></script>
+    <!--JS-->
+    <script src="public/js/script.js"></script>
     <title>Quiz</title>
 </head>
 
 <body>
-    <!-- inicio dos cards-->
-    <div class="container-fluid">
+    <header>
+        <div class="container-fluid">
+            <img src="public/imgs/logo.png" class="img-fluid" style="padding: 0.8%; max-width: 5rem; max-height: 5rem;">
+        </div>
+    </header>
+
+    <p>Selecione o quiz que deseja jogar</p>
+
+    <!-- inicio cards -->
+    <div class="container-fluid teste">
         <div class="row d-flex align-items-strch">
             <!-- games -->
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="card border-0 bg-transparent">
-                    <img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">
+                    <!--<img src="public/imgs/games.png" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">-->
                     <div class="card-body rounded" style="background-color: white;">
                         <h5 class="card-title text-center">
-                            GAMES
+                            JOGOS
                         </h5>
                         <p class="card-text text-center font-weight-bold">
-                            Aqui você encontrará recomendaçoes de jogos, como minecraft, the witcher 3, cyberpunk2077 e outros.
+                            Text.
                         </p>
                     </div>
-                    <a href="pag_game.html" class="btn btn-info">Ver Mais</a>
+                    <a class="btn btn-info" id="quiz1" onclick="escolheJogo('games')">Jogar</a>
+                </div>
+            </div>
+            <!-- musica -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <!--<img src="public/imgs/music.png" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">-->
+                    <div class="card-body rounded" style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            MÚSICAS
+                        </h5>
+                        <p class="card-text text-center font-weight-bold">
+                            Text.
+                        </p>
+                    </div>
+                    <a class="btn btn-info" id="quiz1" onclick="escolheJogo('jooj')">Jogar</a>
+                </div>
+            </div>
+            <!-- filme e series -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <!--<img src="public/imgs/films.jpg" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">-->
+                    <div class="card-body rounded" style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            FILMES E SÉRIES
+                        </h5>
+                        <p class="card-text text-center font-weight-bold">
+                            Text.
+                        </p>
+                    </div>
+                    <a href="pag_film.html" class="btn btn-info" id="quiz3">Jogar</a>
+                </div>
+            </div>
+            <!-- animes -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <!--<img src="public/imgs/anime.jpg" class="rounded-circle img-fluid img-lg" style="padding: 5%;">-->
+                    <div class="card-body rounded" style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            ANIMES
+                        </h5>
+                        <p class="card-text text-center font-weight-bold">
+                            Text.
+                        </p>
+                    </div>
+                    <a href="pag_anim.html" class="btn btn-info" id="quiz4">Jogar</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- fim do cards -->
 </body>
 
 </html>

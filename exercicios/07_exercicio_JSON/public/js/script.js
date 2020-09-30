@@ -2,7 +2,11 @@ var perguntaAtual = 0;
 var numElemento = 0;
 
 function nextQuestion() {
-    var f = games; //escolha do usuario na tela principal de qual quiz ele quer
+    var finfo = info;
+    if (finfo[0].jogoEscolhido == "games") { //retornar variavel do json para atribuir a f
+        var f = games;
+    }
+    //var f = finfo.jogoEscolhido; //escolha do usuario na tela principal de qual quiz ele quer
     var aleatorio;
 
     do {
@@ -48,4 +52,14 @@ function qualApertei(id) {
         nextQuestion();
     }
 
+}
+
+//Função para verificar a escolha do jogo acessando o json
+function escolheJogo(escolha) {
+    //Trocar o jogo escolhido no jogo.json
+    var f = info;
+    f.jogoEscolhido = escolha;
+
+    //ir para proxima tela
+    window.location.href = "quiz.html";
 }
