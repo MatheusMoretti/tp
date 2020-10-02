@@ -1,5 +1,0 @@
-var info = [{
-    "jogoEscolhido": "games",
-    "perguntaAtual": 0,
-    "numElemento": 0
-}];
