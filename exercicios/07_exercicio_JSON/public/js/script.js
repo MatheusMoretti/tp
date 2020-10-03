@@ -6,13 +6,22 @@ function nextQuestion() {
 
     //Escolhendo o quiz o escolhido na pagina index
     //O if impede que ele faça o mesmo trecho mais de 1 vez sendo que nada ali ira mudar
-    if (numElemento < 1) {  
+    if (numElemento < 1) {
         let params = new URLSearchParams(location.search);
         const esc = params.get('p');
 
         switch (esc) {
             case "games":
                 jogoEscolhido = games;
+                break;
+            case "filmes":
+                jogoEscolhido = filmes;
+                break;
+            case "animes":
+                jogoEscolhido = animes;
+                break;
+            case "musicas":
+                jogoEscolhido = musicas;
                 break;
         }
     }
@@ -44,6 +53,7 @@ function nextQuestion() {
 }
 
 var pontuacao = 0;
+
 function qualApertei(id) {
 
     //O json ja foi selecionado no nextQuestion
@@ -60,9 +70,21 @@ function qualApertei(id) {
 
     //Chama a proxima questão
     if (numElemento >= 10) {
-        console.log("error");
-        //ir para tela de final, pontuacao total e volta para a tela inicial
-        window.location.href = "index.html"
+        //Colar a pontuacao final
+        document.getElementById('pontos').innerHTML = pontuacao + " / 10" + "<br>" + (pontuacao * 10) + "%";
+        //Inseriro modal
+        $("#contmod1").modal("show");
+        var seconds = 10,
+            $seconds = document.querySelector('#countdown');
+        (function countdown() {
+            $seconds.textContent = seconds + ' second' + (seconds == 1 ? '' : 's')
+            if (seconds-- > 0) setTimeout(countdown, 1000)
+        })();
+        setTimeout(function() {
+            //ir para tela de final, pontuacao total e volta para a tela inicial
+            window.location.href = "index.html"
+        }, 10000);
+
     } else {
         nextQuestion();
     }
