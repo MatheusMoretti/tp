@@ -3,13 +3,13 @@ var numElemento = 0;
 var jogoEscolhido;
 
 function nextQuestion() {
-
+    var teste;
     //Escolhendo o quiz o escolhido na pagina index
     //O if impede que ele faça o mesmo trecho mais de 1 vez sendo que nada ali ira mudar
     if (numElemento < 1) {
         let params = new URLSearchParams(location.search);
         const esc = params.get('p');
-
+        teste = esc;
         switch (esc) {
             case "games":
                 jogoEscolhido = games;
@@ -24,6 +24,7 @@ function nextQuestion() {
                 jogoEscolhido = musicas;
                 break;
         }
+
     }
 
     //---------------------------------------------
@@ -39,10 +40,10 @@ function nextQuestion() {
     numElemento++;
 
     //Pergunta do quiz
-    document.getElementById('quesTxt').innerHTML = "Você sabe qual 'nome do quiz (ex:jogo)' é esse ? Pergunta " + numElemento + "/10"
+    document.getElementById('quesTxt').innerHTML = "Você sabe qual " + teste + " é esse ? Pergunta " + numElemento + "/10";
 
     //Atualizar a imagem da pergunta atual
-    document.getElementById('displayText').innerHTML = "<img src=" + jogoEscolhido[aleatorio].link + " width=" + "400px >";
+    document.getElementById('displayText').innerHTML = "<img class=" + "borda" + " src=" + jogoEscolhido[aleatorio].link + " width=" + "400px >";
 
     //Atualizar as respostas de acordo com a atual
     document.getElementById('res1').innerHTML = jogoEscolhido[aleatorio].res1;
@@ -80,7 +81,7 @@ function qualApertei(id) {
             $seconds.textContent = seconds + ' second' + (seconds == 1 ? '' : 's')
             if (seconds-- > 0) setTimeout(countdown, 1000)
         })();
-        setTimeout(function() {
+        setTimeout(function () {
             //ir para tela de final, pontuacao total e volta para a tela inicial
             window.location.href = "index.html"
         }, 10000);

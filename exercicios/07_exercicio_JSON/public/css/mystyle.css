@@ -23,3 +23,14 @@
 .backzin {
     background: linear-gradient(90deg, #000000 0%, #1E3A7E 100%);
 }
+
+.borda{
+  border: #fff solid 5px;
+  border-radius: 10%;
+  margin: 15px;
+  box-shadow: 0px 0px 0px 1px #fff inset;
+}
+
+body{
+    background:linear-gradient(90deg,#000000 0%,#1E3A7E 100%);
+}
