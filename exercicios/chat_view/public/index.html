@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/estilo.css" rel="stylesheet">
+
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+    <!-- favicon -->
+    <link href="./imagens/moretti-icon.png" rel="icon">
+    <title>Exercicio 6</title>
+
+   <!--  <script src="./javascripts/ibmWatson.js"></script> -->
+   <!-- APIs - traducao, tempo, text to speach, speach to text -->
+</head>
+
+<body>
+    <!-- inicio navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top navbar-default">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" href="http://github.com/MatheusMoretti" target="blank">
+                <img src="./imagens/moretti.png" height="70" width="160">
+            </a>
+            <!-- botao sanduiche -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- menu -->
+            <div id="menu" class="collapse navbar-collapse">
+                <!-- links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="pag_film.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pag_game.html">Jogos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hai">Quem somos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- fim do navbar -->
+
+    <!-- inicio header -->
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <!--Carousel-->
+                <div class="col-10 offset-1" style="margin-top:5%; padding-bottom: 3%;">
+                    <!--Container-->
+                    <div class="container">
+                        <!--carrosel-->
+                        <div id="Paginas" class="carousel slide" data-ride="carousel" style="text-align: center;">
+                            <!--Indicadores-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#Paginas" data-slide-to="0" class="active"></li>
+                                <li data-target="#Paginas" data-slide-to="1"></li>
+                            </ol>
+                            <!--Conteudo-->
+                            <div class="carousel-inner border rounded">
+                                <!--Imagem 1-->
+                                <div class="carousel-item active">
+                                    <img src="./imagens/gamezone.jpg" class="img-fluid" alt="Jogos">
+                                </div>
+                                <!--Imagem 2-->
+                                <div class="carousel-item">
+                                    <img src="./imagens/cinema.jpg" class="img-fluid" alt="Filmes">
+                                </div>
+                            </div>
+
+                            <!--Seta Voltar-->
+                            <a class="carousel-control-prev" href="#Paginas" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <!--Seta Avançar-->
+                            <a class="carousel-control-next" href="#Paginas" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- fim do header -->
+
+    <div class="conteiner-fluid teste" style="padding-bottom: 3%;">
+        <h1 class="text-light font-weight-bold text-center" style="padding: 5% 0%;">Chatbot</h1>
+        <p class="text-light text-center" style="padding: 0% 10%;">O nosso chatbot Recomend está disponivel para tirar
+            duvidas e dar recomendaçoes.<br> Para acessa-lo basta clicar no icone localizado no canto inferior esquerdo
+            da tela.</p>
+    </div>
+
+    <!-- New Cards-->
+
+    <div class="container-fluid teste">
+        <h1 class="text-light text-center font-weight-bold" style="padding: 5% 0%;">Nossas páginas</h1>
+        <div class="row">
+            <!-- Games -->
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-6" style="padding:3%;">
+                        <img src="./imagens/games.png" class="rounded-circle img-fluid max-width:33%">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12" style="margin-top:8%; padding:3%;">
+                        <p class="card-text text-center font-weight-bold rounded" style="background-color: white;">
+                            Nesta pagina você encontrá algumas recomendaçoes de jogos famosos e muito bem avaliados,
+                            tais como minecraft (um jogo de sobrevivencia cujo foco é a imaginação dojogador, onde pode
+                            ser criado qualquer coisa), The Witcher 3 Wild Hunt (um jogo do estilo RPG, a continuação da
+                            saga de Gerald of Rívia), Cyberpunk2077 (jogo estilo RPG criado pela CDProject Red que será
+                            lançado 10/12/2020) entre outros.
+                        </p>
+                        <a href="pag_game.html" class="btn btn-info btn-block">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filmes e Series -->
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-6" style="padding:3%">
+                        <img src="./imagens/films.jpg" class="rounded-circle img-fluid max-width:33%">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12" style="margin-top:8%; padding:3%">
+                        <p class="card-text text-center font-weight-bold rounded" style="background-color: white;">
+                            Nesta pagina você encontrá algumas recomendaçoes de filmes tais como, Vingadores, Vingadores
+                            Guerra Infinita, De volta para o futuro, além de recomendaçoes de séries como, The Punisher,
+                            Daredevil, O gambito da rainha.
+                        </p>
+                        <a href="pag_film.html" class="btn btn-info btn-block">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Fim New Cards-->
+
+    <!-- inicio quem somos -->
+
+    <div id="qs" class="container-fluid">
+        <h2 class="text-light text-center font-weight-bold" style="padding: 5% 0%;">Quem Somos</h2>
+        <div class="row align-items-strch">
+            <!-- Texto -->
+            <div class="col-lg-9 col-md-8 col-12 border rounded">
+                <p id="us" class="text-center text-light font-weight-bold">Somos alunos de graduação estudando
+                    engenharia de computação na Pontifícia Universidade Católica de Campinas</p>
+            </div>
+            <!-- Mapa -->
+            <div class="col-lg-3 col-md-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.1757589026674!2d-47.05430368556224!3d-22.832986040980924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c424397cf045%3A0x3fe3b99a294a911a!2sPUC%20Campinas%20D.%20Pedro!5e0!3m2!1spt-BR!2sbr!4v1599844511899!5m2!1spt-BR!2sbr"
+                    width="100%" height="250vw" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0" class="rounded"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- End quem sou -->
+
+    <!-- ChatBot Icon -->
+    <!-- <div class="icon">
+        <a data-toggle="collapse" aria-expanded="false" href="#cb" aria-controls="cb">
+            <img src="./imagens/icon.png">
+        </a>
+        <div id="cb" class="collapse chatbox">-->
+            <!-- Cabecalho -->
+            <!-- <div class="chat_head">ChatBot</div> -->
+
+            <!-- Mensagens ja digitadas -->
+           <!--  <div class="chat_body" id="chat">
+            </div> -->
+
+            <!-- Mandar Mensagem -->
+
+            <!-- <div class="chat_footer">
+                <form name="chatForm" method="post">
+                    <textarea name="chatform" class="msg_input" placeholder="Pergunte ao ChatBot" rows="2"></textarea>
+                    <input type="button" onclick="sendMessageToAssitant();" value="Eviar" class="btn btn-block btn-dark text-light">
+                </form>
+            </div>
+
+        </div>
+    </div> -->
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "bfdfeee6-7044-4913-9ac0-9d8327cae5a3", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "0c3dd1a7-9e1d-4c26-a535-7c2a956f2fb7", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+    <!-- End ChatBot Icon-->
+
+    <!-- inicio footer -->
+
+    <footer class="text-light text-center  font-weight-bold bg-dark">
+        <div class="row">
+            <div class="col-lg-3">
+                <p>&copy; Desenvolvido por:<br> Matheus Moretti <br> Giuliano Sanfins</p>
+            </div>
+            <div class="col-lg-3 offset-6">
+                <br>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="http://github.com/MatheusMoretti" target="blank">Matheus Moretti</a>
+                <br>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/giulysanfins" target="blank">Giuliano Sanfins</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- fim do footer -->
+
+</body>
+
+</html>
