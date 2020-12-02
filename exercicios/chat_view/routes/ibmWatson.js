@@ -14,7 +14,7 @@ router.post('/assistant', function(req, res, next) {
   //input  o texto do usuario, workspaceId seu workspace ID, context o contexto criado
   let params = {
       input: { text },
-      workspaceId: '65b74bc1-4c6a-436c-8225-80c7716053e7', 
+      workspaceId: 'YOUR WORK SPACE ID', 
       context
   }
 

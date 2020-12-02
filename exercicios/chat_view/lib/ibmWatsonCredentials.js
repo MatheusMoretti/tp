@@ -4,7 +4,7 @@ const { IamAuthenticator } = require('ibm-watson/auth');
 const assistant = new AssistantV1({
     url: 'https://gateway.watsonplatform.net/assistant/api',
     version: '2020-01-04',
-    authenticator: new IamAuthenticator({ apikey: 'QzgHOoJPIM9EwO8zMV8sSh4E_oVhCSl-0V54ijU9uCNi' })
+    authenticator: new IamAuthenticator({ apikey: 'YOUR API KEY' })
 });
 
 module.exports = {assistant};
