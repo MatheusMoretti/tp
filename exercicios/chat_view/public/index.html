@@ -12,12 +12,14 @@
     <script src="./javascripts/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 
+    <script src="./javascripts/ibmTranslate.js"></script>
+
     <!-- favicon -->
     <link href="./imagens/moretti-icon.png" rel="icon">
     <title>Exercicio 6</title>
 
-   <!--  <script src="./javascripts/ibmWatson.js"></script> -->
-   <!-- APIs - traducao, tempo, text to speach, speach to text -->
+    <!--  <script src="./javascripts/ibmWatson.js"></script> -->
+    <!-- APIs - traducao, tempo, text to speach, speach to text -->
 </head>
 
 <body>
@@ -166,47 +168,6 @@
     </div>
 
     <!-- End quem sou -->
-
-    <!-- ChatBot Icon -->
-    <!-- <div class="icon">
-        <a data-toggle="collapse" aria-expanded="false" href="#cb" aria-controls="cb">
-            <img src="./imagens/icon.png">
-        </a>
-        <div id="cb" class="collapse chatbox">-->
-            <!-- Cabecalho -->
-            <!-- <div class="chat_head">ChatBot</div> -->
-
-            <!-- Mensagens ja digitadas -->
-           <!--  <div class="chat_body" id="chat">
-            </div> -->
-
-            <!-- Mandar Mensagem -->
-
-            <!-- <div class="chat_footer">
-                <form name="chatForm" method="post">
-                    <textarea name="chatform" class="msg_input" placeholder="Pergunte ao ChatBot" rows="2"></textarea>
-                    <input type="button" onclick="sendMessageToAssitant();" value="Eviar" class="btn btn-block btn-dark text-light">
-                </form>
-            </div>
-
-        </div>
-    </div> -->
-
-    <script>
-        window.watsonAssistantChatOptions = {
-            integrationID: "bfdfeee6-7044-4913-9ac0-9d8327cae5a3", // The ID of this integration.
-            region: "us-south", // The region your integration is hosted in.
-            serviceInstanceID: "0c3dd1a7-9e1d-4c26-a535-7c2a956f2fb7", // The ID of your service instance.
-            onLoad: function(instance) { instance.render(); }
-          };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-          document.head.appendChild(t);
-        });
-      </script>
-
-    <!-- End ChatBot Icon-->
 
     <!-- inicio footer -->
 
