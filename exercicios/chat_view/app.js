@@ -4,10 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//-routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-/* var ibmWatsonRouter = require('./routes/ibmWatson'); */
 var ibmTranslatorRouter = require('./routes/ibmTranslator');
+var weatherRouter = require('./routes/weather');
 
 var app = express();
 
@@ -21,10 +22,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+//- router use
+app.use('/', indexRouter); 
 app.use('/users', usersRouter);
-/* app.use('/ibmWatson', ibmWatsonRouter); */
 app.use('/ibmTranslate', ibmTranslatorRouter);
+app.use('/weather', weatherRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -43,3 +45,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
